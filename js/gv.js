@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    var w = 810,
-    h = 480
+    var w = 810
+    , h = 480
 
     var vis = d3.select("#gv").append("svg:svg")
     .attr("width", w)
@@ -15,8 +15,8 @@ $(document).ready(function() {
         .nodes(json.nodes)
         .links(json.links)
         .linkDistance(10)
-        .gravity(.20)
-        .charge( -42)
+        .gravity(.24)
+        .charge( -48)
         .size([w, h])
         .start();
 
@@ -51,9 +51,11 @@ $(document).ready(function() {
         .attr("class", "circle")
         .attr("xlink:href",
         function(d, val) {
-            var val = d.name;
-            var rand = Math.floor(Math.random() * 2);
-            return "http://cdn" + rand + ".brianshumate.com/graphvik/" + val
+            var val = d.name
+          , rand = Math.floor(Math.random() * 2)
+          , prefix = "http://cdn"
+          , url = ".brianshumate.com/graphvik/";
+            return prefix + rand + url + val;
         })
         .attr("x", "-8px")
         .attr("y", "-8px")
