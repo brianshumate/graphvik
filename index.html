@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GraphVik: My Tribute to Artist Vik Muniz as an Abstract Force Directed Graph</title>
+    <meta name="description" content="A forced directed graph made from a photograph of Vik Muniz">
+    <meta name="author" content="Brian Shumate">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="lib/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/bootstrap-modal.js"></script>
+    <script type="text/javascript" src="lib/d3/d3.min.js"></script>
+    <script type="text/javascript" src="lib/d3/d3.layout.min.js"></script>
+    <script type="text/javascript" src="lib/d3/d3.geom.min.js"></script>
+
+    <script type="text/javascript" src="js/gv.js"></script>
+
+
+    <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  </head>
+
+  <body>
+
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <a class="brand" href="#">GraphVik</a>
+          <p class="pull-right">
+            <button class="btn" data-controls-modal="detailsmodal" data-backdrop="static" >What is this</button>
+            <button class="btn primary" onclick="window.location='http://brianshumate.com/';">thing by <strong>Brian Shumate</strong>?</button>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        <div class="page-header">
+          <h1 id="summary">Visualization of Vik Muniz <small>in Force Directed Graph Form</small></h1>
+        </div>
+
+        <div class="row">
+          <div id="gv" class="span14"> </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>GraphVik (version 0.4.7) &middot; created in Boone, North Carolina with &hearts; by Brian Shumate &middot; <a href="https://github.com/brianshumate/GraphVik">Github</a></p>
+      </footer>
+
+    </div>
+
+    <div id="detailsmodal" class="modal hide fade in">
+        <div class="modal-header">
+            <a href="#" class="close">×</a>
+            <h2><strong><em>GraphVik</em></strong> is my nerdy visual tribute to world renown artist &amp; awesome human <button class="btn large primary" onclick="window.location='http://www.vikmuniz.net/';"><strong>Vik Muniz</strong></button></h2>
+        </div>
+        <div class="modal-body">
+            <p>It is a small visualization experiment that consists of 1500 tiles which were programmatically derived from a photo of Mr. Muniz. These tiles are arranged in a force directed graph in which all connected nodes randomly radiate from a central node.</p>
+            <p style="text-align:center"><img src="http://media.brianshumate.com/graphvik/vmphoto_grid.jpg" alt="simplified photo and slice grid for GraphVik"></p>
+            <h4>&ldquo;GraphVik&rdquo; is also a play on the word <em>graphic</em>. ;)</h4>
+
+        </div>
+        <div class="modal-footer">
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.createoplex.com/" : "http://stats.createoplex.com/");
+    document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+    </script><script type="text/javascript">
+    try {
+    var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 17);
+    piwikTracker.trackPageView();
+    piwikTracker.enableLinkTracking();
+    } catch( err ) {}
+    </script><noscript><p><img src="http://stats.createoplex.com/piwik.php?idsite=17" style="border:0" alt="" /></p></noscript>
+  </body>
+</html>
