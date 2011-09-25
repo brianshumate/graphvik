@@ -6,7 +6,7 @@ $(document).ready(function() {
     .attr("width", w)
     .attr("height", h);
 
-    d3.json("js/gv.json",
+    d3.json("js/gv.min.json",
     function(json) {
         var nodename = function(d) {
             return d.name
@@ -15,8 +15,8 @@ $(document).ready(function() {
         .nodes(json.nodes)
         .links(json.links)
         .linkDistance(10)
-        .gravity(.10)
-        .charge( - 42)
+        .gravity(.20)
+        .charge( -42)
         .size([w, h])
         .start();
 
