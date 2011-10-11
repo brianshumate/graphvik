@@ -6,7 +6,7 @@ $(document).ready(function() {
     .attr("width", w)
     .attr("height", h);
 
-    d3.json("js/gv.min.json",
+    d3.json("js/gv.min828.json",
     function(json) {
         var nodename = function(d) {
             return d.name
