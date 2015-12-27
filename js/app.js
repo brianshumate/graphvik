@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(window).load(function () {
   var w = 500,
     h = 500
 
