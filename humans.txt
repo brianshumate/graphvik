@@ -1,0 +1,14 @@
+/* TEAM */
+Guilty Party: Brian Shumate
+Site: http://brianshumate.com/
+Twitter: @brianshumate
+Location: On a boat
+                            
+/* THANKS */
+Name: World Economic Forum for https://commons.wikimedia.org/wiki/File:Vic_Muniz_World_Economic_Forum_2013.jpg
+
+/* SITE */
+Last update: 2015-12-26T18:23:35
+Standards: HTML5, CSS3, JS
+Components: jQuery, Zurb Foundation
+Software: Metalsmith, ImageMagick, Pixelmator, Sublime Text 3
