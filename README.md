@@ -30,7 +30,7 @@ I sliced the tiles with the following simple command:
 
 
 ```
-
+convert -crop 32x32@ Vik-Muniz-1024.jpg.png tile_%d.png
 ```
 
 The photograph is reused with permission from The World Economic Forum.
