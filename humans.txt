@@ -8,7 +8,7 @@ Location: On a boat
 Name: World Economic Forum for https://commons.wikimedia.org/wiki/File:Vic_Muniz_World_Economic_Forum_2013.jpg
 
 /* SITE */
-Last update: 2016-01-14T22:42:39
+Last update: 2016-01-15T18:43:36
 Standards: HTML5, CSS3, JS
 Components: jQuery, Zurb Foundation
 Software: Metalsmith, ImageMagick, Pixelmator, Sublime Text 3
